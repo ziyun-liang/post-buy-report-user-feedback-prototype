@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Design Option 1 - Post Buy Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rating-styles.css">
+</head>
+<body>
+    <!-- Fixed Top Header -->
+    <header class="top-header">
+        <div class="header-left">
+            <div class="brand-section">
+                <img src="images/images:kaleidoscope-logo.png" alt="Kaleidoscope Logo" class="kaleidoscope-logo">
+                <span class="brand-text">
+                    <strong>Kaleidoscope</strong> powered by <strong>Stela Platform</strong>
+                </span>
+            </div>
+            <div class="header-center">
+                <div class="dropdown-section">
+                    <div class="dropdown-group">
+                        <label class="dropdown-label">Insight Type</label>
+                        <div class="dropdown-container">
+                            <select class="header-dropdown">
+                                <option>Post Buy Report</option>
+                            </select>
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                    </div>
+                    <div class="dropdown-group">
+                        <label class="dropdown-label">Select a Campaign</label>
+                        <div class="dropdown-container">
+                            <select class="header-dropdown campaign-dropdown">
+                                <option>Incyte Opzelura | Moments of Clarity 2025</option>
+                            </select>
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="export-btn">Export to Google Slides</button>
+        </div>
+    </header>
+
+    <!-- Fixed Left Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="campaign-info">
+                <h2 class="campaign-title">Incyte Opzelura</h2>
+                <div class="campaign-details">
+                    <p><span class="label">AP</span> 03159216638</p>
+                    <p><span class="label">GAM</span> 03159216638</p>
+                </div>
+                <div class="campaign-meta">
+                    <p><span class="label">Industry:</span><br>
+                    <span class="value">Health</span></p>
+                    
+                    <p><span class="label">Campaign Flight Date:</span><br>
+                    <span class="value">07/27/25 - 08/26/25</span></p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area with Scrollable Pages -->
+    <main class="main-content">
+        <div class="pages-container">
+            <!-- Page 1: Cover -->
+            <section class="page" id="page-1">
+                <div class="page-header">
+                    <h2 class="page-title">Cover Page</h2>
+                    <div class="thumbs-rating">
+                        <button class="thumb-btn thumb-up" data-page="1" data-type="up">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </button>
+                        <button class="thumb-btn thumb-down" data-page="1" data-type="down">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="page-content cover-page">
+                    <img src="images/page-1-cover.png" alt="Cover Page - Incyte Opzelura Moments of Clarity 2025" class="page-image">
+                </div>
+            </section>
+
+            <!-- Page 2: Executive Summary -->
+            <section class="page" id="page-2">
+                <div class="page-header">
+                    <h2 class="page-title">Executive Summary</h2>
+                    <div class="thumbs-rating">
+                        <button class="thumb-btn thumb-up" data-page="2" data-type="up">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </button>
+                        <button class="thumb-btn thumb-down" data-page="2" data-type="down">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <img src="images/page-2-executive-summary.png" alt="Executive Summary" class="page-image">
+                </div>
+            </section>
+
+            <!-- Page 3: Spotlight -->
+            <section class="page" id="page-3">
+                <div class="page-header">
+                    <h2 class="page-title">Content, Media, and Audience Spotlight</h2>
+                    <div class="thumbs-rating">
+                        <button class="thumb-btn thumb-up" data-page="3" data-type="up">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </button>
+                        <button class="thumb-btn thumb-down" data-page="3" data-type="down">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <img src="images/page-3-spotlight.png" alt="Content, Media, and Audience Spotlight" class="page-image">
+                </div>
+            </section>
+
+            <!-- Page 4: Recommendations -->
+            <section class="page" id="page-4">
+                <div class="page-header">
+                    <h2 class="page-title">Keep and Avoid Recommendations</h2>
+                    <div class="thumbs-rating">
+                        <button class="thumb-btn thumb-up" data-page="4" data-type="up">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </button>
+                        <button class="thumb-btn thumb-down" data-page="4" data-type="down">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <img src="images/page-4-recommendations.png" alt="Keep and Avoid Recommendations" class="page-image">
+                </div>
+            </section>
+
+            <!-- Page 5: Thank You -->
+            <section class="page" id="page-5">
+                <div class="page-header">
+                    <h2 class="page-title">Thank You</h2>
+                    <div class="thumbs-rating">
+                        <button class="thumb-btn thumb-up" data-page="5" data-type="up">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </button>
+                        <button class="thumb-btn thumb-down" data-page="5" data-type="down">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="page-content thank-you-page">
+                    <img src="images/page-5-thank-you.png" alt="Thank You Page" class="page-image">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Feedback Popup -->
+    <div class="feedback-overlay" id="feedbackOverlay"></div>
+    <div class="feedback-popup" id="feedbackPopup">
+        <div class="popup-header">
+            <div class="popup-icon" id="popupIcon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="popupIconSvg">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+            </div>
+            <h3 class="popup-title" id="popupTitle">What's good about this page?</h3>
+        </div>
+        <p class="popup-subtitle" id="popupSubtitle">Select qualities that work well (optional)</p>
+        
+        <div class="quality-pills" id="qualityPills">
+            <!-- Pills will be populated by JavaScript -->
+        </div>
+        
+        <div class="additional-comments">
+            <label for="additionalComments">Additional comments</label>
+            <textarea id="additionalComments" class="comment-textarea" placeholder="Tell us more about your experience..."></textarea>
+        </div>
+        
+        <div class="popup-actions">
+            <button class="popup-btn secondary" id="skipBtn">Skip</button>
+            <button class="popup-btn primary" id="submitFeedbackBtn">Submit feedback</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="rating-script.js"></script>
+</body>
+</html>
