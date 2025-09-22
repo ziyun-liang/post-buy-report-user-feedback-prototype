@@ -1,0 +1,418 @@
+/* Sidebar Rating Module Styles */
+.rating-module {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.rating-module-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.page-rating-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.page-rating-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 12px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.page-rating-item:hover {
+    border-color: #d0d0d0;
+}
+
+.page-rating-item.current-page {
+    background: #f5f5f5;
+    border-color: #e1e1e1;
+}
+
+.page-name {
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    line-height: 1.4;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+.page-rating-item.current-page .page-name {
+    color: #333333;
+    font-weight: bold;
+}
+
+.sidebar-thumbs {
+    display: flex;
+    gap: 6px;
+    z-index: 200;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.sidebar-thumb-btn {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer !important;
+    transition: all 0.2s ease;
+    z-index: 1000 !important;
+    position: relative;
+    pointer-events: auto !important;
+    color: #999;
+    padding: 0;
+}
+
+.sidebar-thumb-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.5;
+}
+
+.sidebar-thumb-btn:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.sidebar-thumb-btn.thumb-up:hover {
+    color: #4caf50;
+}
+
+.sidebar-thumb-btn.thumb-down:hover {
+    color: #f44336;
+}
+
+.sidebar-thumb-btn.selected.thumb-up {
+    color: #4caf50;
+}
+
+.sidebar-thumb-btn.selected.thumb-down {
+    color: #f44336;
+}
+
+/* Progress indicator */
+.rating-progress {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.progress-text {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4caf50;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+/* Inline Feedback Module Styles */
+.inline-feedback-module {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.inline-feedback-module.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Thank You Overlay Styles */
+.thank-you-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.thank-you-overlay.show {
+    opacity: 1;
+}
+
+.thank-you-message {
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #28a745;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: inline-block;
+    box-shadow: none;
+}
+
+.feedback-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 8px;
+    color: #000;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.back-btn::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.back-btn:hover::before {
+    border-color: #333;
+}
+
+.feedback-title {
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.quality-pills-container {
+    margin-bottom: 20px;
+}
+
+.quality-pills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inline-quality-pill {
+    background: #f5f5f5;
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.inline-quality-pill:hover {
+    border-color: #d0d0d0;
+}
+
+.inline-quality-pill.positive.selected {
+    background: #4caf50;
+    border-color: #4caf50;
+    color: white;
+}
+
+.inline-quality-pill.negative.selected {
+    background: #f44336;
+    border-color: #f44336;
+    color: white;
+}
+
+.additional-comments-section {
+    margin-bottom: 20px;
+}
+
+.comments-label {
+    display: block;
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.comments-textarea {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    color: #333;
+    resize: vertical;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+.comments-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.comments-textarea::placeholder {
+    color: #999;
+}
+
+.simple-thank-you {
+    position: absolute;
+    bottom: 42px;
+    left: 0;
+    right: 0;
+    color: #28a745;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.simple-thank-you.show {
+    opacity: 1;
+}
+
+.submit-feedback-btn {
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.submit-feedback-btn:hover {
+    background: #555;
+}
+
+.submit-feedback-btn:active {
+    background: #222;
+}
+
+/* Animation for expanding/collapsing */
+.rating-module {
+    transition: all 0.3s ease;
+}
+
+.rating-module.expanding {
+    overflow: hidden;
+}
+
+/* Thank you message */
+.thank-you-message {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'NYTFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 12px;
+    color: #28a745;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.thank-you-message.show {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .rating-module {
+        margin-top: 20px;
+    }
+    
+    .page-rating-item {
+        padding: 6px 8px;
+    }
+    
+    .sidebar-thumb-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    
+    .inline-quality-pill {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
